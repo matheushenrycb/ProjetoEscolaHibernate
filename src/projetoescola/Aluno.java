@@ -19,7 +19,7 @@ public class Aluno extends Pessoa {
     @Id
     @GeneratedValue
     private long id;
-    private int ano;
+    private int semestre;
     private String turno;
     
 
@@ -30,12 +30,12 @@ public class Aluno extends Pessoa {
     public Aluno() {
     }
    
-    public int getAno() {
-        return ano;
+    public int getSemestre() {
+        return semestre;
     }
 
-    public void setAno(int ano) {
-        this.ano = ano;
+    public void setSemestre(int semestre) {
+        this.semestre = semestre;
     }
 
     public String getTurno() {

@@ -22,12 +22,12 @@ public class Cadastros {
         String nome = JOptionPane.showInputDialog("Insira o nome do Aluno:");
         String idade = JOptionPane.showInputDialog("Insira o Idade do Aluno:");
         String sexo = JOptionPane.showInputDialog("Insira o Sexo do Aluno:");
-        String ano = JOptionPane.showInputDialog("Insira o ano do Aluno:");
+        String semestre = JOptionPane.showInputDialog("Insira o semestre do Aluno:");
         String turno = JOptionPane.showInputDialog("Insira o turno do Aluno:");
         alu.setNome(nome);
         alu.setIdade(Integer.parseInt(idade));
         alu.setSexo(sexo);
-        alu.setAno(Integer.parseInt(ano));
+        alu.setSemestre(Integer.parseInt(semestre));
         alu.setTurno(turno);
 
         SessionFactory sf = HibernateUtil.getSessionFactory();
